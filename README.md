@@ -57,3 +57,8 @@ open url http://127.0.0.1:8000/
 ```ps
 admin url http://127.0.0.1:8000/admin
 ```
+
+```ps
+Admin email admin@quiz.com
+Password secret
+```
