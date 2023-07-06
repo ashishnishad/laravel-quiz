@@ -42,8 +42,8 @@ Route::prefix('admin')->middleware(['auth','isadmin'])->group(function() {
 	Route::get('user/delete/{id}', [UserController::class, 'destroy'])->name('user.remove');
 	
 	Route::get('profile', [ProfileController::class, 'edit'])->name('profile.edit');
-	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
-	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
+	Route::put('profile', [ProfileController::class, 'update'])->name('profile.update');
+	Route::put('profile/password', [ProfileController::class, 'password'])->name('profile.password');
 
 	Route::resource('category', CategoryController::class);
 	Route::post('category-data', [CategoryController::class, 'datatable'])->name('category.datatable');
