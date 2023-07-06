@@ -73,7 +73,7 @@ class QuizController extends Controller
 
         $last_page = false;
         $first_page = false;
-        if($question->lastPage() == $request->page || $question->lastPage() == $question->total()){
+        if($question->lastPage() == $request->page){
             $last_page = true;
         }
         if($question->onFirstPage()){
