@@ -79,7 +79,7 @@
         $(document).ready(function(){
           $.ajax({
             url: "{{ route('quiz_questions') }}",
-            data: {quiz_id: {{ $quiz_id }},_token: csrf_token,action: ''},
+            data: {quiz_id: {{ $quiz_id }},page:page,_token: csrf_token,action: ''},
             type: 'GET',
             success: function(json){
               if(json.success){
