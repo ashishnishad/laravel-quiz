@@ -5,7 +5,7 @@
          <div class="d-flex justify-content-center align-items-center container ">
 
     <div class="row ">
-
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
         <x-validation-errors class="mb-4" :errors="$errors" />
 
         <form method="POST" action="{{ route('register') }}">
@@ -61,6 +61,7 @@
                 </x-button>
             </div>
         </form>
+    </div>
     </div>
     </div>
     </x-auth-card>

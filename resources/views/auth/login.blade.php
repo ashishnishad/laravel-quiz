@@ -4,7 +4,7 @@
         <div class="d-flex justify-content-center align-items-center container ">
 
     <div class="row ">
-
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
         <!-- Session Status -->
         <x-auth-session-status class="mb-4" :status="session('status')" />
 
@@ -49,6 +49,7 @@
                 No Account ? <a href="{{ route('register') }}">Register</a>
             </div>
         </form>
+    </div>
     </div>
     </div>
     </x-auth-card>

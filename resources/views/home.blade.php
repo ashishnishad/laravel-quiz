@@ -4,7 +4,7 @@
     <div class="col-12">
       <h2>Quiz Categories</h2>
     </div>
-    <div class="col-4">
+    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
     <ul class="list-group">
       @if($categories)
       @foreach($categories as $key=>$category)

@@ -4,7 +4,7 @@
     <div class="col-12">
       <h2>Category: {{ $category->name }}</h2>
     </div>
-    <div class="col-4">
+    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
       <h2>Quizzes</h2>
       @if($category->quizzes)
       <ul class="list-group">

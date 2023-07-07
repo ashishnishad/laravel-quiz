@@ -33,7 +33,7 @@ Route::group(['namespace'=>'Admin','prefix' => 'admin'], function () {
 
 });
 
-Route::get('admin/dashboard', [DashboardController::class,'index'])->middleware('auth')->name('dashboard');
+Route::get('admin/dashboard', [DashboardController::class,'index'])->middleware(['auth','isadmin'])->name('dashboard');
 
 Route::prefix('admin')->middleware(['auth','isadmin'])->group(function() {
 
