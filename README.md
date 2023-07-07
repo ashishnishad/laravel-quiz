@@ -16,15 +16,16 @@ Navigate to the project folder.
 cd laravel-quiz
 ```
 
-Install required packages.
-
-```ps
-composer install
-```
 create new .env file and edit database credentials there.
 
 ```ps
 cp .env.example .env
+```
+
+Install required packages.
+
+```ps
+composer install
 ```
 
 Generate new app key.
